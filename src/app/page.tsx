@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <div className="text-red-500">
-      Hello world
+      Hello world!!
     </div>
   );
 }
