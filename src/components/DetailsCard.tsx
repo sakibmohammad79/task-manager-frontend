@@ -4,6 +4,7 @@ import { addToCart } from "@/redux/features/card/cardslice";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 import CartInfo from "./CardInfo";
+import Link from "next/link";
 
 interface Product {
   image: string;
@@ -22,11 +23,7 @@ interface ProductDetailsCardProps {
   handleRemove: () => void;
 }
 
-const ProductDetailsCard = ({
-  product,
-  quantity,
-  handleRemove,
-}: ProductDetailsCardProps) => {
+const ProductDetailsCard = ({ product, quantity }: ProductDetailsCardProps) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
@@ -75,12 +72,11 @@ const ProductDetailsCard = ({
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
-            <button
-              onClick={handleRemove}
-              className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition"
-            >
-              Remove Product
-            </button>
+            <Link href={"/product"}>
+              <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition">
+                go to pruduct page
+              </button>
+            </Link>
 
             <button
               onClick={handleAddToCart}

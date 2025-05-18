@@ -32,7 +32,7 @@ const ProductDetailsPage = ({ params }: ProductDetailsPageProps) => {
     return (
       <div className="flex justify-center items-center h-screen">
         {/* Show cart info below products */}
-              <CartInfo />
+        <CartInfo />
         <span className="text-lg font-semibold">Loading...</span>
       </div>
     );
@@ -94,9 +94,7 @@ const ProductDetailsPage = ({ params }: ProductDetailsPageProps) => {
         incrementQty={incrementQty}
         decrementQty={decrementQty}
         totalPrice={totalPrice}
-        handleRemove={handleRemove}
       />
-      
     </div>
   );
 };
