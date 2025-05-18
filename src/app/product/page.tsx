@@ -4,7 +4,7 @@
 import React from "react";
 import { useGetAllProductsQuery } from "@/redux/api/productApi";
 import ProductCard from "@/components/ProductCard";
-import CartInfo from "@/components/CardInfo"; // <-- import here
+
 
 export default function HomePage() {
   const { data, isLoading, isError } = useGetAllProductsQuery({});

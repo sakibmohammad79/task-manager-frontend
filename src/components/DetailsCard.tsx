@@ -25,9 +25,6 @@ interface ProductDetailsCardProps {
 const ProductDetailsCard = ({
   product,
   quantity,
-  incrementQty,
-  decrementQty,
-  totalPrice,
   handleRemove,
 }: ProductDetailsCardProps) => {
   const dispatch = useDispatch();
