@@ -75,7 +75,7 @@ const ProductDetailsPage = ({ params }: ProductDetailsPageProps) => {
           Swal.fire("Removed!", "Product has been removed.", "success");
           router.push("/product");
         } catch (error) {
-          Swal.fire("Error!", "Failed to remove the product.", "error");
+          Swal.fire("Error!", "Failed to remove the product", "error");
         }
       }
     });
