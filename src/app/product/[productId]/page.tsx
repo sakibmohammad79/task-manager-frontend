@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
+import CartInfo from "@/components/CardInfo";
 import ProductDetailsCard from "@/components/DetailsCard";
 // adjust path
 // ... other imports
@@ -30,6 +31,8 @@ const ProductDetailsPage = ({ params }: ProductDetailsPageProps) => {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-screen">
+        {/* Show cart info below products */}
+              <CartInfo />
         <span className="text-lg font-semibold">Loading...</span>
       </div>
     );
@@ -93,6 +96,7 @@ const ProductDetailsPage = ({ params }: ProductDetailsPageProps) => {
         totalPrice={totalPrice}
         handleRemove={handleRemove}
       />
+      
     </div>
   );
 };

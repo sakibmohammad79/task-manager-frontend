@@ -18,8 +18,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-gray-200 py-10 px-4 md:px-10">
-      {/* Show cart info below products */}
-      <CartInfo />
       <h1 className="text-4xl font-bold mb-10 text-center text-gray-800 drop-shadow">
         🛍️ Product Showcase
       </h1>
