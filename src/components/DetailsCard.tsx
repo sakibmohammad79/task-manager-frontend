@@ -76,37 +76,6 @@ const ProductDetailsCard = ({
             <span className="font-bold">${product.price.toFixed(2)}</span>
           </div>
 
-          {/* Quantity Control */}
-          <div className="flex items-center gap-5">
-            <button
-              aria-label="Decrease quantity"
-              onClick={decrementQty}
-              disabled={quantity <= 1}
-              className={`w-10 h-10 rounded-full font-bold text-xl transition ${
-                quantity <= 1
-                  ? "bg-blue-100 text-blue-400 cursor-not-allowed"
-                  : "bg-blue-500 text-white hover:bg-blue-600"
-              }`}
-            >
-              -
-            </button>
-            <span className="text-2xl font-semibold text-blue-600">
-              {quantity}
-            </span>
-            <button
-              aria-label="Increase quantity"
-              onClick={incrementQty}
-              className="w-10 h-10 rounded-full font-bold text-xl bg-blue-500 text-white hover:bg-blue-600 transition"
-            >
-              +
-            </button>
-          </div>
-
-          {/* Total */}
-          <div className="text-2xl font-bold text-green-700">
-            Total: ${totalPrice.toFixed(2)}
-          </div>
-
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
             <button
